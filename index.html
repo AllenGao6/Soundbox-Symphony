@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>SoundBox Symphony</h1>
+    
+    <div id="header">
+      <button id="Begin" onclick="startGame()">
+        Let's Rock!
+      </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+      <span id="spacing"></span>
+      <button id="easyBtn" class="selected" onclick="setEasy()">
+        Easy
+      </button>
+      <button id="hardBtn" onclick="setHard()">
+        Hard
+      </button>     
+    </div>
+    
+    <p id="message">
+      Repeat right after the sound track to win!
+    </p>
+    
+    <p id="explainMode"></p>
+    
+    <p class="hidden" id="timer" >
+        Timer: <span id="time"></span> seconds left.
+    </p>
+    
+    <p class="hidden" id="win_count">
+      Win strike: <span id="win">0</span>
+    </p>
+    
+    <div id="header2">
+      Believe in yourself!    
+    </div>
+    
+    
+    <div id="gameButtonArea">
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6), showImg(6)" onmouseup="stopTone(6), hideImg(6)">
+        <audio id="audio6" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Fa4.mp3?v=1616637801964"></audio>
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2), showImg(2)" onmouseup="stopTone(2), hideImg(2)">
+        <audio id="audio2" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Fa-3.mp3?v=1616637801554"></audio>
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3), showImg(3)" onmouseup="stopTone(3), hideImg(3)">
+        <audio id="audio3" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Fb4.mp3?v=1616637801865"></audio>
+      </button>
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1), showImg(1)" onmouseup="stopTone(1), hideImg(1)">
+        <audio id="audio1" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Ff-5.mp3?v=1616637801525"></audio>
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4), showImg(4)" onmouseup="stopTone(4), hideImg(4)">
+        <audio id="audio4" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Fg5.mp3?v=1616637801893"></audio>
+      </button>
+      <button id="button7" onclick="guess(7)" onmousedown="startTone(7), showImg(7)" onmouseup="stopTone(7), hideImg(7)">
+        <audio id="audio7" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Ff-3.mp3?v=1616637802007"></audio>
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5), showImg(5)" onmouseup="stopTone(5), hideImg(5)">
+        <audio id="audio5" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Fa5.mp3?v=1616637801938"></audio>
+      </button>
+      <button id="button8" onclick="guess(8)" onmousedown="startTone(8), showImg(8)" onmouseup="stopTone(8), hideImg(8)">
+        <audio id="audio8" src="https://cdn.glitch.com/8de696f8-af94-4857-8a03-fe646fc21b9a%2Ff3.mp3?v=1616637802034"></audio>
+      </button>
+    </div>
+    
+  </body>
+</html>
