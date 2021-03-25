@@ -6,13 +6,13 @@ Submitted by: **NAME**
 
 Time spent: **#** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: https://glitch.com/edit/#!/agate-breezy-niece?path=script.js%3A1%3A0 
 
 ## Required Functionality
 
 The following **required** functionality is complete:
 
-* [ ] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
+* [1 ] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
 * [ ] "Start" button toggles between "Start" and "Stop" when clicked. 
 * [ ] Game buttons each light up and play a sound when clicked. 
 * [ ] Computer plays back sequence of clues including sound and visual cue for each button
